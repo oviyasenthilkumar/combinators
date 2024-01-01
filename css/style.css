@@ -1,0 +1,63 @@
+/*universal selectors*/
+*{
+	padding:0; 	/*reset property*/
+	margin:0;	/*reset property*/
+}
+/*group selector*/
+h1,p{
+	color:skyblue;
+}
+
+/*combinator selector*/
+
+/* 1.descendant selector */
+#choco h3{
+	font-style:bold;
+	color:red;
+}
+.dessert h4{
+	color:green;
+	text-transform:uppercase;
+}
+
+/*child selector*/
+.dessert>p{
+	font-style:italic;
+	font-size:25px;
+}
+/*adjacent sibling selector*/
+#choco+h3{
+	color:pink;
+	text-align:center;
+}
+/*general sibling selector*/
+#choco~h3{
+	color:blue;
+}
+
+
+
+
+a, #button p{
+	padding:30px;
+	
+}
+
+button{
+	padding:3px;
+}
+#button h1{
+	text-transform:uppercase;
+	color:#000;
+}
+/*pseudo class selector*/
+#button a:hover{
+	background-color:red;
+	border-radius:5px;
+	color:white;
+}
+button:hover{
+	color:#fff;
+	background-color:#000;
+	border-radius:5px;
+}
